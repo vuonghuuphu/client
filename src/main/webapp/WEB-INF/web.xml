@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>ProductList</servlet-name>
+        <servlet-class>com.example.client.list.ProductList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductList</servlet-name>
+        <url-pattern>/List</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateProduct</servlet-name>
+        <servlet-class>com.example.client.create.CreateProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateProduct</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DetailProduct</servlet-name>
+        <servlet-class>com.example.client.detail.DetailProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetailProduct</servlet-name>
+        <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteproduct</servlet-name>
+        <servlet-class>com.example.client.delete.deleteproduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteproduct</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProduct</servlet-name>
+        <servlet-class>com.example.client.edit.UpdateProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProduct</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+</web-app>
